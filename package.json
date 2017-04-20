@@ -1,1 +1,40 @@
-{     "devDependencies": {         "babel-preset-react-hmre": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-babel-preset-react-hmre",     "homepage": "https://github.com/npmtest/node-npmtest-babel-preset-react-hmre",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-babel-preset-react-hmre.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  [babel-preset-react-hmre (v1.1.1)](https://github.com/danmartinez101/babel-preset-react-hmre)  [![npm package](https://img.shields.io/npm/v/npmtest-babel-preset-react-hmre.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-babel-preset-react-hmre) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-babel-preset-react-hmre.svg)](https://travis-ci.org/npmtest/node-npmtest-babel-preset-react-hmre)",
+    "devDependencies": {
+        "babel-preset-react-hmre": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-babel-preset-react-hmre",
+    "keywords": [
+        "coverage",
+        "test",
+        "babel-preset-react-hmre"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_babel_preset_react_hmre.js",
+    "name": "npmtest-babel-preset-react-hmre",
+    "nameAlias": "npmtest_babel_preset_react_hmre",
+    "nameOriginal": "npmtest-babel-preset-react-hmre",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-babel-preset-react-hmre.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

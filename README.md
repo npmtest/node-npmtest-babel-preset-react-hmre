@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-babel-preset-react-hmre/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-babel-preset-react-hmre/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-babel-preset-react-hmre/build/coverage.html/index.html)
 
@@ -79,7 +79,8 @@
     "scripts": {
         "test": "babel --presets react,../index test/ | grep \"_wrapComponent('Test')(class Test extends React.Component {\""
     },
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "bin": {}
 }
 ```
 
